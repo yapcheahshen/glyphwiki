@@ -1,0 +1,1 @@
+node --max-old-space-size=4000 --max-new-space-size=4000 glyphwiki.js
