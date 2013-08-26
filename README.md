@@ -8,14 +8,17 @@ convert glyphwiki data into ydb format
 * download glyphwiki data from http://glyphwiki.org/dump.tar.gz
 * extract dump_newest_only.txt from dump.tar.gz 
 * convert dump_newest_only.txt to glyphwiki.json and related.json, this will take about 1~2 minutes
-	cd xml	
-	node gw2json
+
+     cd xml	
+     node gw2json
 
 * generate glyphwiki.ydb from json, this will take less than 30 seconds.
-    node glyphwiki
+
+     node glyphwiki
 
 * you will get glyphwiki.ydb about 25MB, type run to open glyphwiki interface
-    run
+
+     run
 
 * you may type chinese character or glyphwiki id 
 
