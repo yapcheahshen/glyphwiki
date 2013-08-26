@@ -6,7 +6,7 @@ convert glyphwiki data into ydb format
 
 ##install
 * download glyphwiki data from http://glyphwiki.org/dump.tar.gz
-* extra dump_newest_only.txt from dump.tar.gz 
+* extract dump_newest_only.txt from dump.tar.gz 
 * convert dump_newest_only.txt to glyphwiki.json and related.json, this will take about 1~2 minutes
 	cd xml	
 	node gw2json

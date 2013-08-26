@@ -1,10 +1,5 @@
-﻿
-
-console.log(require('yase').build({
+﻿console.log(require('yase').build({
 	dbid:'glyphwiki',
-	blockshift:7,
-	schema:function() {
-	},
 	extra: {
 		glyphwiki: JSON.parse(require('fs').readFileSync('./glyphwiki.json'),'utf8'),
 		related: JSON.parse(require('fs').readFileSync('./related.json'),'utf8'),
@@ -16,5 +11,4 @@ console.log(require('yase').build({
 	author:'yapcheahshen@gmail.com',
 	url:'http://www.ksana.tw',
 	version:'0.0.2',
-	//maxfile:3
 }));
