@@ -1,6 +1,11 @@
 var customfunc=require('./glyphwikicustom');
 console.log('loading text');
 var fs=require('fs');
+var dumpfile='dump_newest_only.txt';
+if (!fs.existsSync(dumpfile)) {
+	console.log('missing '+dumpfile+' from  http://glyphwiki.org/dump.tar.gz');
+	return;
+}
 var arr=fs.readFileSync('dump_newest_only.txt','utf8').split('\n');
 
 console.log('parsing')

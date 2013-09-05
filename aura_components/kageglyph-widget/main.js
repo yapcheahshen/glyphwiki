@@ -19,7 +19,7 @@ define(['underscore','text!./kage.tmpl','../../userglyph'], function(_,template,
       var datauri="data:image/svg+xml;utf8,"+svg;
       
 
-      $img=$('<img width="200px" height="200px" title="'+glyph+'"></img>');
+      $img=$('<img width="500px" height="500px" title="'+glyph+'"></img>');
       $img.attr('src',datauri)
       $("#output").prepend($img);
       
@@ -51,10 +51,12 @@ define(['underscore','text!./kage.tmpl','../../userglyph'], function(_,template,
           glyph='u'+tofind.charCodeAt(0).toString(16);
           that.fetchglyph(glyph,function(data){
             that.renderglyph(glyph,data);
+
           })
         } else {
           if (iscommand) data[glyph]=tofind;
           that.renderglyph(glyph,data);
+           console.log(data)
         }
       });
 

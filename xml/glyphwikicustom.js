@@ -51,7 +51,7 @@ var parse = function(str, key) {
 	for (var i in arr) {
 		var s = arr[i];
 		var stk = s.split(":");
-		if (parseInt(i)) r.push(partseperator);
+		if (parseInt(i,10)) r.push(partseperator);
 		for (var j in stk) {
 			if (!stk[j]) break; //no data after : u23714
 			if (isNaN(stk[j])) {
