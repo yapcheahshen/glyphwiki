@@ -19,7 +19,7 @@ define(['underscore','text!./kage.tmpl','../../userglyph'], function(_,template,
       var datauri="data:image/svg+xml;utf8,"+svg;
       
 
-      $img=$('<img width="500px" height="500px" title="'+glyph+'"></img>');
+      $img=$('<img width="300px" height="300px" title="'+glyph+'"></img>');
       $img.attr('src',datauri)
       $("#output").prepend($img);
       

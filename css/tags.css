@@ -1,0 +1,7 @@
+img.glyphwiki{
+-webkit-transition:-webkit-transform 0.3s ease-in; 
+}
+img.glyphwiki:hover {
+	-webkit-transform:scale(5);
+	background:white;
+}
