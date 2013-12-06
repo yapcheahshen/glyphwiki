@@ -9,7 +9,9 @@ convert glyphwiki data into ydb format
 * extract dump_newest_only.txt from dump.tar.gz 
 * convert dump_newest_only.txt to glyphwiki.json and related.json, this will take about 1~2 minutes
 
-     cd xml	
+     cd xml
+     
+     
      node gw2json
 
 * generate glyphwiki.ydb from json, this will take less than 30 seconds.
